@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .App {
@@ -98,7 +98,7 @@ nav ul li {
 /* ***********HEADER************* */
 .header-wrapper {
   position: relative;
-  background: url(code83.jpg) no-repeat;
+  background: url('images/code83.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   height: 95vh;
@@ -154,5 +154,28 @@ nav ul li {
 @media (max-width: 768px) {
   .particles-canvas {
     display: none;
+  }
+}
+
+/* ***********Profile************* */
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-img {
+  width: 16rem;
+  border-radius: 50%;
+  padding: .3rem;
+  border: 1px solid teal;
+}
+
+.about-heading {
+  color: teal;
+  /* text-transform: uppercase; */
+}
+@media screen and (max-width: 468px) {
+  .profile-img {
+    width: 10rem;
   }
 }
