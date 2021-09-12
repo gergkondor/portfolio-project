@@ -14,7 +14,7 @@ const Header = () => {
           typingDelay={500}
           loop
         />
-      <a href="#" className="btn-main-offer">Contact me</a>
+      <a href="mailto:example@gmail.com" className="btn-main-offer">Contact me</a>
       </div>
     </div>
   )

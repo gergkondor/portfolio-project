@@ -20,7 +20,15 @@ const Portfolio = () => {
         <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/8020Coding/netflix-project", "_blank")}>https://github.com/8020Coding/netflix-project</a>
       </>
     )
-    PopupboxManager.open({ content })
+    PopupboxManager.open({ content });
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "Kondor Guitars Official Website",
+        },
+      },
+    });
   }
 
   const popupboxConfigKondorGuitars = {
@@ -43,7 +51,15 @@ const Portfolio = () => {
         <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/8020Coding/city-guide-app", "_blank")}>https://github.com/.../...</a>
       </>
     )
-    PopupboxManager.open({ content })
+    PopupboxManager.open({ content });
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "RunClub project",
+        },
+      },
+    });
   }
 
   const popupboxConfigRunclub = {
@@ -66,7 +82,15 @@ const Portfolio = () => {
         <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/8020Coding/portfilio", "_blank")}>https://github.com/8020Coding/portfilio</a>
       </>
     )
-    PopupboxManager.open({ content })
+    PopupboxManager.open({ content });
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "TeaCozy Project",
+        },
+      },
+    });
   }
 
   const popupboxConfigTeaCozy = {
@@ -89,7 +113,15 @@ const Portfolio = () => {
         <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/8020Coding/task-manager", "_blank")}>https://github.com/8020Coding/task-manager</a>
       </>
     )
-    PopupboxManager.open({ content })
+    PopupboxManager.open({ content });
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "Vcexp Project",
+        },
+      },
+    });
   }
 
   const popupboxConfigVcexp = {

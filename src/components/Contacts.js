@@ -36,7 +36,7 @@ const Contacts = () => {
   return (
     <div className="contacts">
       <div className="text-center">
-        <h1>contact me</h1>
+        <h1>Contact me</h1>
         <p>Please fill out the form and describe your project needs and I'll contact you as soon as possible.</p>
         <span className="success-message">{successMessage}</span>
       </div>
@@ -55,11 +55,11 @@ const Contacts = () => {
                   aria-invalid={errors.name ? "true" : "false"}
                   {...register("name", {
                     required: "Please enter your name",
-                    maxLength: {
-                      value: 20,
-                      message:
-                        "Please enter a name with fewer than 20 characters",
-                    },
+                    // maxLength: {
+                    //   value: 20,
+                    //   message:
+                    //     "Please enter a name with fewer than 20 characters",
+                    // },
                   })}
                 />
                 <div className="line"></div>
@@ -75,7 +75,7 @@ const Contacts = () => {
                   className="form-control"
                   placeholder="Phone Number"
                   name="phone"
-                  aria-invalid={errors.name ? "true" : "false"}
+                  aria-invalid={errors.phone ? "true" : "false"}
                   {...register("phone", {
                     required: "Please add your phone number",
                   })}
@@ -94,7 +94,7 @@ const Contacts = () => {
                   className="form-control"
                   placeholder="Email"
                   name="email"
-                  aria-invalid={errors.name ? "true" : "false"}
+                  aria-invalid={errors.email ? "true" : "false"}
                   {...register("email", {
                     required: "Please provide your email",
                     pattern: {
@@ -116,9 +116,9 @@ const Contacts = () => {
                   className="form-control"
                   placeholder="Subject"
                   name="subject"
-                  aria-invalid={errors.name ? "true" : "false"}
+                  aria-invalid={errors.subject ? "true" : "false"}
                   {...register("subject", {
-                    required: "OOPS, you forget to add the subject.",
+                    required: "OOPS, you forgot to add the subject.",
                   })}
                 />
                 <div className="line"></div>
@@ -134,9 +134,9 @@ const Contacts = () => {
                 <textarea
                   type="text"
                   className="form-control"
-                  placeholder="Please describe shortly you project..."
+                  placeholder="Please describe your project..."
                   name="description"
-                  aria-invalid={errors.name ? "true" : "false"}
+                  aria-invalid={errors.description ? "true" : "false"}
                   {...register("description", {
                     required: "Please describe shortly your project needs...",
                   })}
@@ -147,7 +147,7 @@ const Contacts = () => {
               <span className="error-message">
                 {errors.description && errors.description.message}
               </span>
-              <button className="btn-main-offer contact-btn" type="submit">contact me</button>
+              <button className="btn-main-offer contact-btn" type="submit">Send</button>
             </div>
           </div>
         </form>
