@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
+import { Link } from "react-scroll";
 
 const Header = () => {
   return (
@@ -14,7 +15,7 @@ const Header = () => {
           typingDelay={500}
           loop
         />
-      <a href="mailto:example@gmail.com" className="btn-main-offer">Contact me</a>
+      <Link smooth={false} to="contacts" offset={0} spy={true} className="btn-main-offer" href="#">Contact me</Link>
       </div>
     </div>
   )

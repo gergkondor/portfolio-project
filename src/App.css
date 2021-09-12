@@ -15,6 +15,9 @@
 body {
   font-family: 'Montserrat', sans-serif !important;
 }
+* {
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
@@ -332,11 +335,13 @@ font-weight: 600;
   padding: 3rem 0;
 }
 .portfolio-image {
-  width: 15rem;
+  width: 100%;
   border: 1px solid var(--primary-teal);
   padding: 0.5rem;
+  /* max-width: 100% !important; */
 }
 .portfolio-image-box {
+  /* display: flex; */
   position: relative;
   margin: 1rem;
   width: 15rem !important;
@@ -351,8 +356,8 @@ font-weight: 600;
   position: absolute;
   opacity: 0;
   background: var(--primary-black);
-  width: 15rem;
-  height: 7.8rem;
+  width: 90%;
+  height: 40%;
   top: 0;
   cursor: pointer;
 }
@@ -363,8 +368,8 @@ font-weight: 600;
 .portfolio-icon {
   position: absolute;
   opacity: 0;
-  margin-left: 7rem;
-  margin-top: -5rem;
+  margin-left:-7rem;
+  margin-top: 3rem;
   color: var(--primary-teal);
   font-size: 1.5rem;
 }
@@ -375,7 +380,7 @@ font-weight: 600;
 }
 /*------------ OVERFLOW BOX ------------------*/
 .portfolio-image-popupbox {
-  width: 45rem;
+  width: 100%;
   padding: 0 0.5rem;
 }
 .popupbox-wrapper {
@@ -470,9 +475,11 @@ font-weight: 600;
 
 .contact-btn {
   margin: 1rem 0 0 0;
-  width: 100%;
-  /* background: none; */
+  max-width: 30% !important;
   background-color: var(--primary-teal);
+}
+.contacts .row {
+  justify-content: center;
 }
 
 .line {

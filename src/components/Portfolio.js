@@ -16,7 +16,7 @@ const Portfolio = () => {
     const content = (
       <>
         <img className="portfolio-image-popupbox" src={gazetteer} alt="gazetter project1" />
-        <p>My first project (IT Career Switch)</p>
+        <p>My first course project at IT Career Switch</p>
         <b>Visit:</b> <a className="hyper-link" onClick={() => window.open("https://gazetteer.gergokondor.me", "_blank")}>https://gazetteer.gergokondor.me</a>
       </>
     )
@@ -141,11 +141,15 @@ const Portfolio = () => {
           <div className="image-box-wrapper row justify-content-center">
 
             <div className="portfolio-image-box" onClick={openPopupboxGazetteer}>
-              <img className="portfolio-image" src={gazetteer} alt="Kondor Guitars" />
-              <div className="overflow"></div>
-              <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-              <h3>The Gazetteer</h3>
-              <p>A mobile-friendly map application with country info, currency converter, navigation, weather and city/street search.</p>
+              <div>
+                <img className="portfolio-image" src={gazetteer} alt="Kondor Guitars" />
+                <div className="overflow"></div>
+                <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+              </div>
+              <div className="text-center">
+                <h3>The Gazetteer</h3>
+                <p>A mobile-friendly map application with country info, currency converter, navigation, weather and city/street search.</p>
+              </div>
             </div>
 
             {/* <div className="portfolio-image-box" onClick={openPopupboxRunclub}>
