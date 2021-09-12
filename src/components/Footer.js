@@ -26,20 +26,7 @@ const Footer = () => {
               <a href="mailto:example@gmail.com">example@gmail.com</a>
             </div>
           </div>
-          {/* <div className="col-lg-3 col-md-2 col-sm-6">
-            <div className="row">
-              <div className="col">
-                <a className="footer-nav">Profile</a>
-                <br />
-                <a className="footer-nav">Services</a>
-              </div>
-              <div className="col">
-                <a className="footer-nav">Portfolio</a>
-                <br />
-                <a className="footer-nav">Contacts</a>
-              </div>
-            </div>
-          </div> */}
+        
           <div className="share col-lg-5 col-md-5 col-sm-6 align-items-center">
             <div className="d-flex justify-content-center">
               <FacebookShareButton

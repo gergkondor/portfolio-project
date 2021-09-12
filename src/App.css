@@ -46,7 +46,7 @@ body {
     transform: rotate(360deg);
   }
 }
-/* ***********NAVBAR************* */
+/* ----------- NAVBAR ----------- */
 nav {
   z-index: 2;
   border-bottom: 1px solid lightgrey;
@@ -60,7 +60,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-/* ---------Menu Links----------- */
+/* ----------- Menu Links-----------  */ 
 nav a.nav-link {
   letter-spacing: 0.0375rem;
   cursor: pointer;
@@ -72,7 +72,7 @@ nav ul li {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-dimgray) !important;
-  border-top: 0.1875rem solid white;
+  border-top: 0.1875rem solid transparent;
 }
 .navbar-brand {
   color: var(--primary-dimgray) !important;
@@ -88,7 +88,7 @@ nav ul li {
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-teal);
 }
-/* ***********NAV MEDIA************* */
+/* ----------- NAV MEDIA -----------  */ 
 @media screen and (max-width: 450px) {
   .navbar-brand {
     letter-spacing: 0.2rem;
@@ -102,7 +102,7 @@ nav ul li {
   }
 }
 
-/* ***********HEADER************* */
+/* ----------- HEADER -----------  */ 
 .header-wrapper {
   position: relative;
   background: url('images/code83.jpg') no-repeat;
@@ -129,7 +129,7 @@ h1 {
   color: var(--primary-teal);
   text-transform: uppercase;
 }
-/* ***********HEADER************* */
+/* ----------- HEADER -----------  */ 
 .typed-text {
   font-size: 2rem;
   color: var(--primary-white);
@@ -137,7 +137,7 @@ h1 {
   width: 100%;
   padding: 20px;
 }
-/* ***********HEADER MAIN OFFER BUTTON************* */
+/* ----------- HEADER MAIN OFFER BUTTON-----------  */ 
 .btn-main-offer {
   border: 1px solid var(--primary-teal);
   border-radius: 1.7rem;
@@ -154,7 +154,7 @@ h1 {
   transition: .2s ease-in-out;
   background-color: rgba(255, 255, 255, 0.2);
 }
-/* ***********PARTICLES JS************* */
+/* ----------- PARTICLES JS-----------  */ 
 .tsparticles-canvas-el {
   position: absolute;
   height: 100vh;
@@ -167,7 +167,7 @@ h1 {
   }
 }
 
-/* ***********Profile************* */
+/* ----------- Profile -----------  */ 
 .photo-wrap {
   display: flex;
   justify-content: center;
@@ -185,7 +185,7 @@ h1 {
   }
 }
 
-/* ***********skills************* */
+/* ----------- Skills -----------  */ 
 .skills-row {
   justify-content: center;
 }
@@ -195,10 +195,6 @@ h1 {
   background: var(--primary-light-grey);
 }
 
-.skills h1 {
-  /* color: teal; */
-  /* text-transform: capitalize; */
-}
 .skills .circle {
   position: relative;
   margin: 0.375rem auto;
@@ -237,7 +233,7 @@ h1 {
   color: var(--primary-white);
 }
 
-/************************ QUALIFICATIONS *********************************/
+/* ----------- QUALIFICATIONS -----------  */ 
 
 .qualifications {
 padding: 0.7rem;
@@ -248,11 +244,6 @@ position: relative;
 padding: 3.125rem 0;
 overflow: hidden;
 }
-
-/* .qualifications h1 {
-text-transform: uppercase;
-color: var(--primary-teal);
-} */
 
 .qualifications-wrapper::before {
 position: absolute;
@@ -306,7 +297,7 @@ color: var(--primary-teal);
 font-weight: 600;
 }
 
-/*------------ MEDIA ------------------*/
+/* ----------- MEDIA -----------  */ 
 @media(max-width: 768px) {
   .qualifications .container {
   padding-left: 0;
@@ -328,7 +319,7 @@ font-weight: 600;
   }
 }
 
-/* ***********Portfolio************* */
+/* ----------- Portfolio -----------  */ 
 
 .portfolio-wrapper {
   background: var(--primary-light-grey);
@@ -338,10 +329,8 @@ font-weight: 600;
   width: 100%;
   border: 1px solid var(--primary-teal);
   padding: 0.5rem;
-  /* max-width: 100% !important; */
 }
 .portfolio-image-box {
-  /* display: flex; */
   position: relative;
   margin: 1rem;
   width: 15rem !important;
@@ -350,7 +339,7 @@ font-weight: 600;
   color: var(--primary-grey);
 }
 
-/* ---------Overflow----------- */
+/* ----------- Overflow -----------  */ 
 
 .overflow {
   position: absolute;
@@ -378,7 +367,7 @@ font-weight: 600;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
-/*------------ OVERFLOW BOX ------------------*/
+/* -----------  OVERFLOW  BOX -----------  */ 
 .portfolio-image-popupbox {
   width: 100%;
   padding: 0 0.5rem;
@@ -396,7 +385,7 @@ font-weight: 600;
   color: var(--primary-red);
 }
 
-/*------------ MEDIA ------------------*/
+/* -----------  MEDIA  -----------  */ 
 @media(max-width: 768px) {
   .portfolio-image-popupbox {
     width: 100%;
@@ -422,9 +411,8 @@ font-weight: 600;
   }
 
 
-/************************ CONTACTS COMPONENT *********************************/
+/* ----------- CONTACTS COMPONENT -----------  */ 
 .contacts {
-  /* background: var(--primary-light-grey); */
   padding: 3rem 0;
   height: 100vh;
   display: flex;
@@ -443,7 +431,7 @@ font-weight: 600;
   font-size: 1.2rem;
 }
 
-/*------------------ INPUTS -------------------------------*/
+/* ----------- INPUTS -----------  */ 
 .contacts input, .contacts textarea {
   width: 100%;
   box-sizing: border-box;
@@ -515,7 +503,7 @@ textarea.form-control {
   color: var(--primary-green);
 }
 
-/*---------------- MEDIA -----------------------*/
+/* ----------- MEDIA -----------  */ 
 @media(max-width: 768px) {
   .contacts {
     overflow-x: hidden;
@@ -530,7 +518,7 @@ textarea.form-control {
   }
 }
 
-/************************ FOOTER COMPONENT *********************************/
+/* ----------- FOOTER COMPONENT -----------  */ 
 .footer {
   background: var(--primary-light-grey);
   color: var(--primary-grey);
