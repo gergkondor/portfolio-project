@@ -14,7 +14,7 @@ const Portfolio = () => {
       <>
         <img className="portfolio-image-popupbox" src={gazetteer} alt="gazetter project1" />
         <p>My first course project at IT Career Switch</p>
-        <b>Visit:</b> <a className="hyper-link" onClick={() => window.open("https://gazetteer.gergokondor.me", "_blank")}>https://gazetteer.gergokondor.me</a>
+        <b>Visit:</b> <a className="hyper-link" href="https://gazetteer.gergokondor.me" target="_blank" >The Gazetteer</a>
       </>
     )
     PopupboxManager.open({ content });
