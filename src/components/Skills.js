@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { faDesktop, faFileCode } from "@fortawesome/free-solid-svg-icons";
 
-const Services = () => {
+const Skills = () => {
     return ( 
-        <div className="services">
+        <div id="skills" className="services">
       <h1 className="py-5">My services</h1>
       <div className="container">
         <div className="row">
@@ -50,4 +50,4 @@ const Services = () => {
     )
 }
 
-export default Services
+export default Skills

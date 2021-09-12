@@ -34,7 +34,7 @@ const Contacts = () => {
   }
 
   return (
-    <div className="contacts">
+    <div id="contacts" className="contacts">
       <div className="text-center">
         <h1>Contact me</h1>
         <p>Please fill out the form and describe your project needs and I'll contact you as soon as possible.</p>
@@ -55,11 +55,11 @@ const Contacts = () => {
                   aria-invalid={errors.name ? "true" : "false"}
                   {...register("name", {
                     required: "Please enter your name",
-                    // maxLength: {
-                    //   value: 20,
-                    //   message:
-                    //     "Please enter a name with fewer than 20 characters",
-                    // },
+                    maxLength: {
+                      value: 20,
+                      message:
+                        "Please enter a name with fewer than 20 characters",
+                    },
                   })}
                 />
                 <div className="line"></div>

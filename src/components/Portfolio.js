@@ -17,7 +17,7 @@ const Portfolio = () => {
       <>
         <img className="portfolio-image-popupbox" src={kondorGuitars} alt="kondorGuitars..." />
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque illo est expedita quos adipisci suscipit unde itaque qui perferendis.</p>
-        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/8020Coding/netflix-project", "_blank")}>https://github.com/8020Coding/netflix-project</a>
+        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/.../...", "_blank")}>https://github.com/.../...</a>
       </>
     )
     PopupboxManager.open({ content });
@@ -46,9 +46,9 @@ const Portfolio = () => {
       <>
         <img className="portfolio-image-popupbox" src={runclub} alt="runclub..." />
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque illo est expedita quos adipisci suscipit unde itaque qui perferendis.</p>
-        <b>Demo:</b> <a  className="hyper-link" onClick={() => window.open("https://city-guide-app-project.herokuapp.com/", "_blank")}>https://city-guide-app-project.herokuapp.com/</a>
+        <b>Demo:</b> <a  className="hyper-link" onClick={() => window.open("https://...com/", "_blank")}>https://...com/</a>
         <br />
-        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/8020Coding/city-guide-app", "_blank")}>https://github.com/.../...</a>
+        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/.../...", "_blank")}>https://github.com/.../...</a>
       </>
     )
     PopupboxManager.open({ content });
@@ -77,9 +77,9 @@ const Portfolio = () => {
       <>
         <img className="portfolio-image-popupbox" src={teacozy} alt="TeaCozy..." />
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque illo est expedita quos adipisci suscipit unde itaque qui perferendis.</p>
-        <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://portfolio-rea-and-material-ui.herokuapp.com/", "_blank")}>https://portfolio-rea-and-material-ui.herokuapp.com/</a>
+        <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://...com/", "_blank")}>https://...com/</a>
         <br />
-        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/8020Coding/portfilio", "_blank")}>https://github.com/8020Coding/portfilio</a>
+        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/.../...", "_blank")}>https://github.com//.../...</a>
       </>
     )
     PopupboxManager.open({ content });
@@ -108,9 +108,9 @@ const Portfolio = () => {
       <>
         <img className="portfolio-image-popupbox" src={vcexp} alt="Vcexp Project..." />
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque illo est expedita quos adipisci suscipit unde itaque qui perferendis.</p>
-        <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://react-redux-task-manager.herokuapp.com/", "_blank")}>https://react-redux-task-manager.herokuapp.com/</a>
+        <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://...com/", "_blank")}>https://...com/</a>
         <br />
-        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/8020Coding/task-manager", "_blank")}>https://github.com/8020Coding/task-manager</a>
+        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/.../...", "_blank")}>https://github.com/.../...</a>
       </>
     )
     PopupboxManager.open({ content });
@@ -135,7 +135,7 @@ const Portfolio = () => {
 
   return (
     <div>
-      <div className="portfolio-wrapper">
+      <div id="portfolio" className="portfolio-wrapper">
         <div className="container">
           <h1 className="text-center py-5">Portfolio</h1>
           <div className="image-box-wrapper row justify-content-center">
