@@ -5,8 +5,8 @@ import Navbar from "./components/Navbar";
 import Header from './components/Header';
 import Profile from './components/Profile';
 import Skills from './components/Skills';
-import Portfolio from './components/Portfolio';
 import Qualifications from './components/Qualifications';
+import Portfolio from './components/Portfolio';
 import Contacts from './components/Contacts';
 import Footer from "./components/Footer";
 

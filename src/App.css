@@ -123,12 +123,8 @@ nav ul li {
 h1 {
   letter-spacing: 0.5rem;
   word-spacing: 1rem;
-  color: var(--primary-teal) !important;
+  color: var(--primary-teal);
   text-transform: uppercase;
-}
-.main-info h1 {
-  color: var(--primary-white);
-  /* text-transform: uppercase; */
 }
 /* ***********HEADER************* */
 .typed-text {
@@ -178,12 +174,7 @@ h1 {
   width: 16rem;
   border-radius: 50%;
   padding: .3rem;
-  border: 1px solid teal;
-}
-
-.about-heading {
-  color: teal;
-  /* text-transform: uppercase; */
+  border: 1px solid var(--primary-teal);
 }
 @media screen and (max-width: 468px) {
   .profile-img {
@@ -202,7 +193,7 @@ h1 {
 }
 
 .skills h1 {
-  color: teal;
+  /* color: teal; */
   /* text-transform: capitalize; */
 }
 .skills .circle {
@@ -222,7 +213,7 @@ h1 {
   transform: translate(-50%, -50%);
 }
 .skills .box {
-  height: 16rem;
+  height: 17rem;
   border-bottom: 0.3rem solid rgb(0, 172, 172);
   padding: 0.625rem;
   margin-bottom: 1.875rem;
@@ -255,10 +246,10 @@ padding: 3.125rem 0;
 overflow: hidden;
 }
 
-.qualifications h1 {
+/* .qualifications h1 {
 text-transform: uppercase;
 color: var(--primary-teal);
-}
+} */
 
 .qualifications-wrapper::before {
 position: absolute;
@@ -340,9 +331,6 @@ font-weight: 600;
   background: var(--primary-light-grey);
   padding: 3rem 0;
 }
-.portfolio-wrapper h1 {
-  color: var(--primary-teal);
-}
 .portfolio-image {
   width: 15rem;
   border: 1px solid var(--primary-teal);
@@ -353,6 +341,9 @@ font-weight: 600;
   margin: 1rem;
   width: 15rem !important;
 }
+.portfolio-image-box h3  {
+  color: var(--primary-grey);
+}
 
 /* ---------Overflow----------- */
 
@@ -361,7 +352,7 @@ font-weight: 600;
   opacity: 0;
   background: var(--primary-black);
   width: 15rem;
-  height: 100%;
+  height: 7.8rem;
   top: 0;
   cursor: pointer;
 }
@@ -438,9 +429,7 @@ font-weight: 600;
 }
 
 .contacts h1 {
-  color: var(--primary-teal);
   padding: 1.3rem 0;
-  /* text-transform: uppercase; */
 }
 
 
@@ -536,9 +525,9 @@ textarea.form-control {
 
 /************************ FOOTER COMPONENT *********************************/
 .footer {
-  background: var(--primary-black);
+  background: var(--primary-light-grey);
   color: var(--primary-grey);
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .footer a {
@@ -554,4 +543,10 @@ textarea.form-control {
 
 .footer p {
   margin-bottom: 0;
+}
+.footer .row {
+  justify-content: space-between;
+}
+.address, .share {
+  padding: 20px;
 }

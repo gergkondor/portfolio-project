@@ -15,7 +15,7 @@ const Footer = () => {
     <div className="footer">
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 col-md-6 col-sm-6">
+          <div className="address col-lg-4 col-md-6 col-sm-6">
             <div className="d-flex">
               <p>Derby, United Kingdom</p>
             </div>
@@ -40,7 +40,7 @@ const Footer = () => {
               </div>
             </div>
           </div> */}
-          <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
+          <div className="share col-lg-5 col-md-5 col-sm-6 align-items-center">
             <div className="d-flex justify-content-center">
               <FacebookShareButton
                 url={"https://www.example.com/"}
