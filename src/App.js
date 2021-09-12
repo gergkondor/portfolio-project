@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Profile from './components/Profile';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
+import Qualifications from './components/Qualifications';
 import Contacts from './components/Contacts';
 import Footer from "./components/Footer";
 
@@ -17,7 +18,7 @@ function App() {
         params={{
           "particles": {
               "number": {
-                  "value": 50
+                  "value": 75
               },
               "size": {
                   "value": 3
@@ -36,6 +37,7 @@ function App() {
       <Header />
       <Profile />
       <Skills />
+      <Qualifications />
       <Portfolio />
       <Contacts />
       <Footer />

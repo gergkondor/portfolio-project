@@ -5,17 +5,17 @@ import { faDesktop, faFileCode } from "@fortawesome/free-solid-svg-icons";
 
 const Skills = () => {
     return ( 
-        <div id="skills" className="services">
-      <h1 className="py-5">My services</h1>
+        <div id="skills" className="skills">
+      <h1 className="py-5">Skills</h1>
       <div className="container">
-        <div className="row">
-          <div className="col-lg-3 col-md-6 col-sm-6">
+        <div className="row skills-row">
+          {/* <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="box">
               <div className="circle"><FontAwesomeIcon className="icon" icon={faDesktop} size="2x" /></div>
               <h3>Web Design</h3>
               <p>I approach each project individually and always focus on the result.</p>
             </div>
-          </div>
+          </div> */}
           {/* - */}
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="box">
@@ -30,19 +30,19 @@ const Skills = () => {
             <div className="box">
               <div className="circle"><FontAwesomeIcon className="icon" icon={faFacebookF} size="2x" /></div>
 
-              <h3>Facebook Ads SMM</h3>
-              <p>Your potential clients well see your services or product on Facebook</p>
+              <h3>Full Stack Development</h3>
+              <p>HTML - CSS - JavaScript - React - Redux - Node.js - MySQL - PostgreSQL - PHP - Python - Java - C#</p>
             </div>
           </div>
           {/* - */}
-          <div className="col-lg-3 col-md-6 col-sm-6">
+          {/* <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="box">
               <div className="circle"><FontAwesomeIcon className="icon" icon={faGoogle} size="2x" /></div>
 
               <h3>Google Ads</h3>
               <p>Your service or product will appear at the top of the Google search</p>.
               </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
