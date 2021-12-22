@@ -470,10 +470,12 @@ font-weight: 600;
 .contact-btn {
   margin: 1rem 0 0 0;
   max-width: 30% !important;
+  height: 10% !important;
   background-color: var(--primary-teal);
 }
 .contacts .row {
   justify-content: center;
+  align-items: center;
 }
 
 .line {
@@ -549,5 +551,13 @@ textarea.form-control {
   justify-content: space-between;
 }
 .address, .share {
-  padding: 20px;
+  padding: 5px;
+  position: relative;
+  height: auto;
+}
+.address.col-lg-4.col-md-6.col-sm-6 {
+  display: flex;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: center;
 }

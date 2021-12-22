@@ -37,7 +37,7 @@ const Contacts = () => {
     <div id="contacts" className="contacts">
       <div className="text-center">
         <h1>Contact me</h1>
-        <p>Please fill out the form and describe your project needs and I'll contact you as soon as possible.</p>
+        <p>Please fill out the form and I'll contact you as soon as possible.</p>
         <span className="success-message">{successMessage}</span>
       </div>
       <div className="container">
@@ -68,25 +68,6 @@ const Contacts = () => {
                 {errors.name && errors.name.message}
               </span>
 
-              {/* PHONE INPUT */}
-              <div className="text-center">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Phone Number"
-                  name="phone"
-                  aria-invalid={errors.phone ? "true" : "false"}
-                  {...register("phone", {
-                    required: "Please add your phone number",
-                  })}
-
-                />
-                <div className="line"></div>
-              </div>
-              <span className="error-message">
-                {errors.phone && errors.phone.message}
-              </span>
-
               {/* EMAIL INPUT */}
               <div className="text-center">
                 <input
@@ -96,7 +77,7 @@ const Contacts = () => {
                   name="email"
                   aria-invalid={errors.email ? "true" : "false"}
                   {...register("email", {
-                    required: "Please provide your email",
+                    required: "Please provide your email address",
                     pattern: {
                         value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                         message: "invalid Email"
@@ -109,36 +90,16 @@ const Contacts = () => {
                 {errors.email && errors.email.message}
               </span>
 
-              {/* SUBJECT INPUT */}
-              <div className="text-center">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Subject"
-                  name="subject"
-                  aria-invalid={errors.subject ? "true" : "false"}
-                  {...register("subject", {
-                    required: "OOPS, you forgot to add the subject.",
-                  })}
-                />
-                <div className="line"></div>
-              </div>
-              <span className="error-message">
-                {errors.subject && errors.subject.message}
-              </span>
-            </div>
-            <div className="col-md-6 col-xs-12">
-
               {/* DESCRIPTION */}
               <div className="text-center">
                 <textarea
                   type="text"
                   className="form-control"
-                  placeholder="Please describe your project..."
+                  placeholder="Message..."
                   name="description"
                   aria-invalid={errors.description ? "true" : "false"}
                   {...register("description", {
-                    required: "Please describe shortly your project needs...",
+                    required: "Please enter your message...",
                   })}
                 > 
                 </textarea>
