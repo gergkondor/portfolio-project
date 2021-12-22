@@ -1,5 +1,6 @@
 import React from 'react';
 import gazetteer from '../images/gazetteer.png';
+import companydirectory from '../images/companydirectory.png';
 // FontAwesome imports
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
@@ -14,7 +15,7 @@ const Portfolio = () => {
       <>
         <img className="portfolio-image-popupbox" src={gazetteer} alt="gazetter project1" />
         <p>My first course project at IT Career Switch</p>
-        <b>Visit:</b> <a className="hyper-link" href="https://gazetteer.gergokondor.me" target="_blank" >The Gazetteer</a>
+        <b>Visit:</b> <a className="hyper-link" href="https://gazetteer.gergokondor.me" target="_blank">The Gazetteer</a>
       </>
     )
     PopupboxManager.open({ content });
@@ -37,6 +38,35 @@ const Portfolio = () => {
     fadeInSpeed: 500
   }
 
+  const openPopupboxCompanyDirectory = () => {
+    const content = (
+      <>
+        <img className="portfolio-image-popupbox" src={companydirectory} alt="gazetter project1" />
+        <p>My second course project at IT Career Switch</p>
+        <b>Visit:</b> <a className="hyper-link" href="https://companyDirectory.gergokondor.me" target="_blank">Company Directory</a>
+      </>
+    )
+    PopupboxManager.open({ content });
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "Company Directory - Project2",
+        },
+      },
+    });
+  }
+
+  const popupboxConfigCompanyDirectory = {
+    titleBar: {
+      enable: true,
+      text: "Company Directory - Project2"
+    },
+    fadeIn: true,
+    fadeInSpeed: 500
+  }
+
+
   return (
     <div>
       <div id="portfolio" className="portfolio-wrapper">
@@ -46,7 +76,7 @@ const Portfolio = () => {
 
             <div className="portfolio-image-box" onClick={openPopupboxGazetteer}>
               <div>
-                <img className="portfolio-image" src={gazetteer} alt="Kondor Guitars" />
+                <img className="portfolio-image" src={gazetteer} alt="Gazetteer" />
                 <div className="overflow"></div>
                 <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
               </div>
@@ -56,10 +86,23 @@ const Portfolio = () => {
               </div>
             </div>
 
+            <div className="portfolio-image-box" onClick={openPopupboxCompanyDirectory}>
+              <div>
+                <img className="portfolio-image" src={companydirectory} alt="Company Directory" />
+                <div className="overflow"></div>
+                <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+              </div>
+              <div className="text-center">
+                <h3>Company Directory</h3>
+                <p>A mobile-friendly company personnel database application to manage employees, departmens and locations.</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
       <PopupboxContainer {...popupboxConfigGazetteer} />
+      <PopupboxContainer {...popupboxConfigCompanyDirectory} />
     </div>
   )
 }

@@ -341,6 +341,9 @@ font-weight: 600;
 .portfolio-image-box h3  {
   color: var(--primary-grey);
 }
+.popupbox-overlay {
+  opacity: 0.5 !important;
+}
 
 /* ----------- Overflow -----------  */ 
 
@@ -349,7 +352,7 @@ font-weight: 600;
   opacity: 0;
   background: var(--primary-black);
   width: 90%;
-  height: 40%;
+  height: 35%;
   top: 0;
   cursor: pointer;
 }
